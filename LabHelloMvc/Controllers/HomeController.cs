@@ -16,8 +16,8 @@ namespace LabHelloMvc.Controllers
         {
             var person = new Person
             {
-                FirstName = "A",
-                LastName = "B"
+                FirstName = "First",
+                LastName = "Last"
             };
             return View(person);
         }
