@@ -6,16 +6,20 @@ namespace LabHelloMvc.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController()
         {
-            _logger = logger;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var person = new Person
+            {
+                FirstName = "A",
+                LastName = "B"
+            };
+            return View(person);
         }
 
         public IActionResult Privacy()

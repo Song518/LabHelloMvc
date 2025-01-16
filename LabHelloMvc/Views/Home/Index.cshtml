@@ -2,7 +2,16 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@model LabHelloMvc.Models.Person
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Person Details</title>
+</head>
+<body>
+    <h1>Person Details</h1>
+    <p><strong>First Name:</strong> @Model.FirstName</p>
+    <p><strong>Last Name:</strong> @Model.LastName</p>
+</body>
+</html>
